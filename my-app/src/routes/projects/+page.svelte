@@ -1,3 +1,7 @@
+<script>
+    import Project from "../../components/Project.svelte";
+</script>
+
 <style>
     div {
         font-family: 'Courier New', Courier, monospace;
@@ -35,9 +39,16 @@
 
 
 <div>
+  <h1>projects</h1>
+  <p>unordered list with project title, description, and a picture</p>
 
-
-<h1>projects</h1>
-<p>unordered list with project title, description, and a picture</p>
-
+    <ul>
+        <li>
+            <Project title="test" description="test" image="test"/>
+        </li>
+    </ul>  
 </div>
+
+
+
+
