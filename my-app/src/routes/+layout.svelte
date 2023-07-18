@@ -16,13 +16,15 @@
 		font-family: 'Courier New', Courier, monospace;
 		font-size: 18px;
 		font-weight: bold;
+		background-color: white;
 
 		position: fixed;
   		left: 0;
   		bottom: 0;
   		width: 100%;
   		text-align: center;
-		margin-bottom: 15px;
+		padding-bottom: 8px;
+		padding-top: 8px;
 
 		display: flex;
 		justify-content: center;
@@ -35,6 +37,10 @@
 
 	}
 
+	#content-wrap {
+		padding-bottom: 36px;
+	}
+
 </style>
 
 <nav id="header">
@@ -43,7 +49,9 @@
 	<a href="/projects">projects</a>
 </nav>
 
-<slot />
+<div id="content-wrap">
+	<slot/>
+</div>
 
 <nav id="footer">
 	<a href="https://www.linkedin.com/in/cooperbocko">linkedin</a>

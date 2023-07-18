@@ -1,5 +1,4 @@
 <script>
-    import Project from "../../components/Project.svelte";
 </script>
 
 <style>
@@ -16,6 +15,10 @@
         position: relative;
 
 
+    }
+
+    ul {
+        list-style: none;
     }
 
     h1 {
@@ -40,11 +43,18 @@
 
 <div>
   <h1>projects</h1>
-  <p>unordered list with project title, description, and a picture</p>
+  <p>fix image src!</p>
 
     <ul>
         <li>
-            <Project title="test" description="test" image="test"/>
+            <div class="card">
+    
+                <div class="container">
+                  <h1>Absque</h1> 
+                  <img src="IMG_1413.JPG" alt="Absque" style="width:50%">
+                  <p>Fullstack development using React, Node.js, and MongoDb to create a Reddit-like blog site where users can view others' posts as well as create, edit, and delete their own posts.</p> 
+                </div>
+            </div>
         </li>
     </ul>  
 </div>
